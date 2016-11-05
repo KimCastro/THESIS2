@@ -22,7 +22,7 @@
         <li><a href="">Rooms</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="contactus.php">Contact us</a></li>
-        <li><a href="logout.php">User</a></li>
+        
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -31,13 +31,14 @@
         <li><a href="#">Rooms</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="conactus.php">Contact us</a></li>
-        <li><a href="logout.php">User</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse" style="color:white"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   <!-- end of navigation bar -->
-        
+    <header class="main-header" role="banner">
+    <center><img src="img/steps/step2.png" alt="step2"/></center><hr noshade>
+    </header>
 
 
 
