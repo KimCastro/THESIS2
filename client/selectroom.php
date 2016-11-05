@@ -68,7 +68,7 @@ $query = "SELECT user_name,  user_arrival , user_departure FROM `users`WHERE use
   <!-- end of navigation bar -->
         
           <header class="main-header" role="banner">
-  <img src="img/step2.png" alt="step2"/><hr noshade>
+  <img src="img/steps/step2.png" alt="step2"/><hr noshade>
 </header>
 
 
