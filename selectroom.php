@@ -28,7 +28,6 @@
         <li><a href="">Rooms</a></li>
         <li><a href="gallery.php">Gallery</a></li>
         <li><a href="contactus.php">Contact us</a></li>
-        <li><a href="logout.php">User</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -44,7 +43,7 @@
   </nav>
   <!-- end of navigation bar -->
    <header class="main-header" role="banner">
-  <img src="img/step2.png" alt="step2"/><hr noshade>
+  <img src="img/steps/step2.png" alt="step2"/><hr noshade>
 </header>
         
 
@@ -114,7 +113,7 @@ Number of night(s):<br>
      
    
   <hr />
-
+ 
 
   <div class="container">
     <div class="section">
