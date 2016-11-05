@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +28,7 @@
         <li><a href="gallery.php">Gallery</a></li>
         <li><a href="contactus.php">Contact us</a></li>
          <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Login<i class="material-icons right">arrow_drop_down</i></a></li>
+      
        <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
   <li><a href="#!">Login as Guest</a></li>
@@ -56,7 +54,7 @@
   </nav>
   <!-- end of navigation bar-->
          <header class="main-header" role="banner">
-  <img src="img/step1.png" alt="step1"/><hr noshade>
+  <img src="img/steps/step1.png" alt="step1"/><hr noshade>
 </header>
        
            
