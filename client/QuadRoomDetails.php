@@ -117,7 +117,7 @@ $user_adults=$_POST["user_adults"];
   </nav>
   <!-- end of nav bar-->
        <header class="main-header" role="banner">
-  <img src="img/step2.png" alt="step2"/><hr noshade>
+  <img src="img/steps/step2.png" alt="step2"/><hr noshade>
 </header>
 
    
@@ -227,7 +227,7 @@ $user_adults=$_POST["user_adults"];
           <p style="padding:5px;" class="grey">• Check-in is at 2:00 pm</p>
           <p style="padding:5px;" class="grey">• Up to 2 kids, 12 years old and below may stay in the room for free, sharing bed with parents.</p>       
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
     </div>
   </div>
