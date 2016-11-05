@@ -57,9 +57,20 @@
   <hr>
     <!--Front View-->
     <br>
+    
+      
     <div class="row">
+
       <div class="col s2"></div>
-      <div class="col s5"><h5 class=" red-text text-darken-4"> Front View Room </h5><img class="responsive-img" style="height: 350px; width:600px" src="img/FrontView/FV.jpg"> </div>
+      <div class="col s5"><h5 class=" red-text text-darken-4"> Front View Room </h5><div class="materialboxed"><div class="carousel carousel-slider" style="height: 350px; width:500px">
+    <a class="carousel-item" href="#one!"><img src="img/FrontView/FV.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="img/FrontView/FV2.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="img/FrontView/FVCr2.jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="img/FrontView/FrontViewCr.jpg"></a>
+  </div> 
+
+  </div>
+      <br>
       <div class="col s4"><br><br><p><b>Room Details:</b><br>
       3 pax<br> 
       1 Double Bed with Pull-out <br>
@@ -69,15 +80,16 @@
       Hot and Cold Shower <br>
       Fan <br>
       Toiletries Included <br>
-      Additional Mattress by Request</p>
+      Additional Mattress by Request<br>
+      Regular rate: P 1,500.00<br>
+      Peak Rate: P 2,000.00</p>
 
-      <!-- Modal Trigger -->
-      <a class="modal-trigger waves-effect waves-light btn red darken-4" href="#SeeFV">See More</a>
 
+      
       </div>
       <div class="col s2"></div>
     </div>
-
+    
     <!--Standard-->
     <br>
     <div class="row">
@@ -91,13 +103,16 @@
       Hot and Cold Shower <br>
       Fan <br>
       Toiletries Included <br>
-      Additional Mattress by Request</p>
-
-      <!-- Modal Trigger -->
-      <a class="modal-trigger waves-effect waves-light btn red darken-4" href="#SeeStan">See More</a>
+      Additional Mattress by Request<br>
+      Regular rate: P 1,200.00<br>
+      Peak rate: </p>
 
       </div>
-      <div class="col s4"><h5 class=" red-text text-darken-4 left-align"> Standard Room </h5><img class="responsive-img" style="height: 350px; width:600px" src="img/StandardRoom/Standard.jpg"> </div>
+      <div class="col s4"><h5 class=" red-text text-darken-4 left-align"> Standard Room </h5><div class="materialboxed"><div class="carousel carousel-slider" style="height: 350px; width:500px">
+    <a class="carousel-item" href="#one!"><img src="img/StandardRoom/Standard.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="img/StandardRoom/StandardCr.jpg"></a>
+    </div>
+  </div>  </div>
       <div class="col s3"></div>
     </div>
 
@@ -105,7 +120,13 @@
     <br>
     <div class="row">
       <div class="col s2"></div>
-      <div class="col s5"><h5 class=" red-text text-darken-4"> Quad Room </h5><img class="responsive-img" style="height: 350px; width:600px" src="img/QuadRoom/Quad.jpg"> </div>
+      <div class="col s5"><h5 class=" red-text text-darken-4"> Quad Room </h5><div class="materialboxed"><div class="carousel carousel-slider" style="height: 350px; width:500px">
+    <a class="carousel-item" href="#one!"><img src="img/QuadRoom/Quad.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="img/QuadRoom/Quad2.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="img/QuadRoom/QuadCr.jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="img/FrontView/FrontViewCr.jpg"></a>
+    </div>
+  </div>  </div>
       <div class="col s4"><br><br><p><b>Room Details:</b><br>
       3 pax<br> 
       1 Double Bed with Pull-out <br>
@@ -115,11 +136,11 @@
       Hot and Cold Shower <br>
       Fan <br>
       Toiletries Included <br>
-      Additional Mattress by Request</p>
+      Additional Mattress by Request<br>
+      Regular rate: P 1,800.00<br>
+      Peak rate: </p>
 
-    <!-- Modal Trigger -->
-      <a class="modal-trigger waves-effect waves-light btn red darken-4" href="#SeeQuad">See More</a>
-
+    
       </div>
       <div class="col s2"></div>
     </div>
@@ -138,30 +159,57 @@
       Hot and Cold Shower <br>
       Fan <br>
       Toiletries Included <br>
-      Additional Mattress by Request</p>
-
-       <!-- Modal Trigger -->
-      <a class="modal-trigger waves-effect waves-light btn red darken-4" href="#SeeFam">See More</a>
-
+      Additional Mattress by Request<br>
+      Regular rate: P 3,000<br>
+      Peak rate: </p>
+       
       </div>
-       <div class="col s4"><h5 class=" red-text text-darken-4 left-align"> Family Room </h5><img class="responsive-img" style="height: 350px; width:600px" src="img/FamilyRoom/Family.jpg"> </div>
+
+       <div class="col s4"><h5 class=" red-text text-darken-4 left-align"> Family Room </h5><div class="materialboxed"><div class="carousel carousel-slider" style="height: 350px; width:500px">
+    <a class="carousel-item" href="#one!"><img src="img/FamilyRoom/Family.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="img/FamilyRoom/Family2.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="img/FamilyRoom/Family3.jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="img/FamilyRoom/FamilyCr.jpg"></a>
+  </div> </div>
+  </div>
       <div class="col s3"></div>
     </div>
     <hr>
 
   <!-- start of Modal Structure FVRooms -->
-  <div id="SeeFV" class="modal modal-fixed-footer">
-    <div class="modal-content">
-      <h4>More photos of Front View Rooms</h4>
+  <div id="SeeFV" class="modal" style="height: 1000px;width: 1000px;">
+    
 
-      <img class="materialboxed"  width="250" src="img/rooms/front/dl1fv.png">
-      <img class="materialboxed"  width="250" src="img/rooms/front/dl2fv.png">
-      <img class="materialboxed"  width="250" src="img/rooms/front/dl3fv.png">
-      <p>Price: Php 1,800</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
-    </div>
+       <div class="slider">
+    <ul class="slides">
+      <li>
+
+        <center><img src="img/FrontView/FV.jpg" style="height: 800px;width: 800px;"></center> <!-- random image -->
+        <div class="caption center-align">
+          
+        </div>
+      </li>
+      <li>
+        <img src="img/FrontView/FrontViewCr.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          
+        </div>
+      </li>
+      <li>
+        <img src="img/FrontView/FV2.jpg"> <!-- random image -->
+        <div class="caption right-align">
+        </div>
+      </li>
+      <li>
+        <img src="img/FrontView/FVCr2.jpg"> <!-- random image -->
+        <div class="caption center-align">
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+ 
   </div>
   <!-- end of Modal Structure FVRooms -->
 
@@ -245,6 +293,8 @@
   <script src="js/modal.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/dropdown.js"></script>
+  <script src="js/slider1.js"></script>
+
   <!-- end of Scripts -->
 
   </body>
