@@ -91,7 +91,7 @@ header('Location: selectroom.php');
   <!-- end of navigation bar -->
 
   <header class="main-header" role="banner">
-  <img src="img/step1.png" alt="step1"/><hr noshade>
+  <img src="img/steps/step1.png" alt="step1"/><hr noshade>
 </header>
         
        <br><br><br>
