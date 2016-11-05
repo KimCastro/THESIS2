@@ -115,7 +115,7 @@ $user_adults=$_POST["user_adults"];
   </nav>
   <!-- end of the navigation bar --> 
        <header class="main-header" role="banner">
-  <img src="img/step2.png" alt="step2"/><hr noshade>
+  <img src="img/steps/step2.png" alt="step2"/><hr noshade>
 </header>    
 
     <form style="margin-top:20px;"  action="StandardRoomDetails.php" method = "post">
