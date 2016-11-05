@@ -70,12 +70,12 @@ $query = "SELECT user_name,  user_arrival , user_roomcharge, user_departure ,use
   </nav>
   <!-- end of navigation bar -->
      <header class="main-header" role="banner">
-  <img src="img/step4.png" alt="step4"/><hr noshade>
+  <img src="img/steps/step4.png" alt="step4"/><hr noshade>
 </header>
 
   <!-- start of booking summary--> 
   <div class="row col s12">   
- <div class="col s3">
+ <div class="col s6">
          <div class="card grey darken-2" style="border:4px solid #ffc400;" >
         <div class="card-content white-text" align="center">  
         <h5 class="amber-text text-accent-3" style="padding:10px;"> Booking Summary</h5>
@@ -98,7 +98,7 @@ $query = "SELECT user_name,  user_arrival , user_roomcharge, user_departure ,use
 <!--end of booking summary -->
 
 <!--end of 3rd b column card -->
-  <div class="col s3">
+  <div class="col s6">
     <div class="card grey darken-2" style="border:4px solid #ffc400;">
       <div class="card-content white-text" align="center"> 
        <div class=" input-field col s12">
@@ -132,26 +132,7 @@ $query = "SELECT user_name,  user_arrival , user_roomcharge, user_departure ,use
         
 </div>
 
-  <br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-        </div>
-        </div>
-
-
-
-
-        </div>
-
-        <!--end of 3rd b column card -->
-  <div class="col s6">
-    <div class="card grey darken-2" style="border:4px solid #ffc400;">
-      <div class="card-content white-text" align="center"> 
-       <div class=" input-field col s12">
-          <h5 class="amber-text text-accent-3"> Policies</h5>
-          <p style="padding:5px;" class="grey"> • Check-out is at 12:00 noon</p>
-          <p style="padding:5px;" class="grey">• Check-in is at 2:00 pm</p>
-          <p style="padding:5px;" class="grey " > • A valid ID is required to verify your reservation upon checking-in with us.</p>
-          <p style="padding:5px;" class="grey">• Please deposit half of the total price to DL Divine Inn's bank account to confirm your reservation. Upon depositing, please send us an image of the deposit slip to confirm your deposit. We will be sending your email for the confirmation of your reservation after. Thank you. </p>
          
         
 </div>
@@ -171,7 +152,7 @@ $query = "SELECT user_name,  user_arrival , user_roomcharge, user_departure ,use
         <div class="row col s12">
           <a class="waves-effect waves-light btn red darken-4 left" href="guestinfo">Back</a>
          <!-- Modal Trigger -->
-      <a class="waves-effect waves-light btn modal-trigger red darken-4 right" href="#modal1">Confirm Booking</a>
+      <a href="policy.php" style="float:right;" class="waves-effect waves-light btn red darken-4"><i class="material-icons right">fast_forward</i>Continue</a>
 
         <!-- Modal Structure -->
         <div id="modal1" class="modal">
