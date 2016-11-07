@@ -1,57 +1,13 @@
 
-
-
-
 <?php
 
-
-include("Session.php");
-
-
-  include('connect.php'); 
-// mysql select query
-$query = "SELECT user_id FROM `users`WHERE user_name = '$login_session'";
-$result = mysqli_query($con, $query);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-
-  
-
-// result for method one
-// result for method one
-if(isset($_POST["Continue"]))
+if(isset($_POST['Continue']))
 {
-  $hostname = "localhost";
-    $username = "root";
-    $password = "";
-    $databaseName = "accounts";
 
- $connect = mysqli_connect($hostname, $username, $password, $databaseName);
- 
- //Including dbconfig file.
-  include('connect.php'); 
-$user_numrooms=$_POST["user_numrooms"];
-$user_adults=$_POST["user_adults"];
-  $user_children=$_POST["user_children"];
-  
-  $user_roomtype=$_POST["user_roomtype"];
-  $user_roomcharge=$_POST["user_roomcharge"];
-  
- $user_extraperson=$_POST["user_extraperson"];
-  
-  
- $user_id = $_POST['user_id']; 
-
-        $query =  " UPDATE `users` SET `user_extraperson`='".$user_extraperson."',`user_roomcharge`='".$user_roomcharge."',`user_roomtype`='".$user_roomtype."',`user_numrooms`='".$user_numrooms."',`user_adults`='".$user_adults."' ,`user_children`='".$user_children."'WHERE  `user_id`='".$user_id."'";
-
-
-       $result = mysqli_query($connect,$query); 
-          header('Location:guestinfo.php');
-
-
-
- 
-
+header('Location: guestinfo.php');
 }
+
+
 
 
 ?>
@@ -119,7 +75,7 @@ $user_adults=$_POST["user_adults"];
   </nav>
 <!--end of nav bar -->
   <header class="main-header" role="banner">
-  <img src="img/step2.png" alt="step2"/><hr noshade>
+  <img src="img/steps/step2.png" alt="step2"/><hr noshade>
 </header>
 
 
@@ -130,7 +86,7 @@ $user_adults=$_POST["user_adults"];
  <form  action="familyRoomDetails.php" method = "post">
   <!-- start of 3rd column card(dropdown lists)-->
  
-    <input type="hidden" name="user_id"  value = "<?php echo  $login_session = $row['user_id'];?>"  style=" border:none; background:transparent;  font-weight: bold;" >
+    <input type="hidden" name="user_id"  value = "<?php //echo  $login_session = $row['user_id'];?>"  style=" border:none; background:transparent;  font-weight: bold;" >
    
   <!-- end of the navigation bar -->     
 
@@ -185,7 +141,7 @@ $user_adults=$_POST["user_adults"];
       <option value="3">3</option>
       <option value="4">4</option>
       <option value="5">5</option>
-      <input type="hidden" name="user_id"  value = "<?php echo  $login_session = $row['user_id'];?>"  style=" border:none; background:transparent;  font-weight: bold;" >
+      <input type="hidden" name="user_id"  value = "<?php //echo  $login_session = $row['user_id'];?>"  style=" border:none; background:transparent;  font-weight: bold;" >
 
         
 
