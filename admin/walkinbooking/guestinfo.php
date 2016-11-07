@@ -65,7 +65,7 @@
   </nav>
   <!-- end of navigation bar -->
    <header class="main-header" role="banner">
-  <img src="img/step3.png" alt="step3"/><hr noshade>
+  <img src="img/steps/step3.png" alt="step3"/><hr noshade>
 </header>
 
 
