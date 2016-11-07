@@ -19,41 +19,48 @@
 <body>
 
   <!-- start of navigation bar -->
-  <nav class="red darken-4" role="navigation">
+ <nav class="red darken-4" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img" src="img/DL.png" style="width: 100px; height: 60px;"></a>
+      <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img" src="img/DL.png" style="width: 220px; height: 110px;"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="index.php">Home</a></li>
-        <li><a href="aboutus.php">About us</a></li>
-        <li><a href="Rooms.php">Rooms</a></li>
-        <li><a href="gallery.php">Gallery</a></li>
-        <li><a href="contactus.php">Contact us</a></li>
-    <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Guest<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="/updatedDLDivine12/admin/index.php">Home</a></li>
+        <li><a href="/updatedDLDivine12/admin/Rooms.php">Rooms</a></li>
+        <li><a href="/updatedDLDivine12/admin/gallery.php">Gallery</a></li>
+        <li><a href="/updatedDLDivine12/admin/walkinbooking/booking.php">Book a Room</a></li>
+            <li><a href="/updatedDLDivine12/admin/dashboard.php">Dashboard</a></li>
+        <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Admin<i class="material-icons right">arrow_drop_down</i></a></li>
        <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
-  <li><a href="booking.php">Book a room</a></li>
-  <li class="divider"></li>
-  <li><a href="send.php">Send deposit slip</a></li>
-   <li class="divider"></li>
-   <li><a href="logout.php">Logout</a></li>
+  <li><a href="acceptedusers.php">Profile Settings</a></li>
+      <li class="divider"></li>
+    <li><a href="logout.php">Logout</a></li>
+   
+    </ul>
+  
+</ul>
       </ul>
-
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="index.php">Home</a></li>
-        <li><a href="aboutus.php">About us</a></li>
+        <li><a href="index.php">Home</a></li>s
         <li><a href="Rooms.php">Rooms</a></li>
         <li><a href="gallery.php">Gallery</a></li>
-        <li><a href="contactus.php">Contact us</a></li>
-         <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Guest<i class="material-icons right">arrow_drop_down</i></a></li>
+
+       <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Admin<i class="material-icons right">arrow_drop_down</i></a></li>
        <!-- Dropdown Structure -->
-<ul id="dropdown2" class="dropdown-content">
-  <li><a href="booking.php">Book a room</a></li>
-  <li class="divider"></li>
-  <li><a href="send.php">Send deposit slip</a></li>
-   <li class="divider"></li>
-   <li><a href="logout.php">Logout</a></li>
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="announcements.php">Announcements</a></li>
+    <li class="divider"></li>
+    <li><a href="promos.php">Promos</a></li>
+    <li class="divider"></li>
+    <li><a href="activities.php">Activities</a></li>
+    <li class="divider"></li>
+    <li><a href="acceptedusers.php">Accepted Users</a></li>
+    <li class="divider"></li>
+    <li><a href="userinfo.php">Reservations</a></li>
+    <li class="divider"></li>
+     <li><a href="userinfo.php">List of Transactions</a></li>
+  </ul>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse" style="color:white"><i class="material-icons">menu</i></a>
     </div>
@@ -61,7 +68,7 @@
   <!-- end of navigation bar -->
         
           <header class="main-header" role="banner">
-  <img src="img/step2.png" alt="step2"/><hr noshade>
+  <img src="img/steps/step2.png" alt="step2"/><hr noshade>
 </header>
 
 
@@ -122,8 +129,6 @@
     <div class ="input-control text info">
    
 
-           <input style="height:35px;" type="text" name="Province" required placeholder="Province" required> <br><br>
-         
 
        
     </div>
