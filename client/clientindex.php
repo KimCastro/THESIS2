@@ -1,12 +1,13 @@
 <?php
+include("Session.php");
 
   include('connect.php'); 
 // mysql select query
-$query = "SELECT * from announcements";
-
+$query = "SELECT user_name, user_id, user_arrival , user_departure , user_fullname FROM `users`WHERE user_name = '$login_session'";
   
 // result for method one
-$announcements = mysqli_query($con, $query);
+  $result = mysqli_query($con,$query); 
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
 
 
@@ -28,6 +29,7 @@ $result = mysqli_query($con,$query);
 
 ?>
 
+
 <?php
 
   include('connect.php'); 
@@ -39,6 +41,28 @@ $query = "SELECT * from promos";
 $promos = mysqli_query($con, $query);
 
 ?>
+
+
+
+
+
+<?php
+
+  include('connect.php'); 
+// mysql select query
+$query = "SELECT * from announcements";
+
+  
+// result for method one
+$announcements = mysqli_query($con, $query);
+
+?>
+
+
+
+
+
+
 <?php
 
   include('connect.php'); 
@@ -50,6 +74,11 @@ $query = "SELECT * from activities";
 $activities = mysqli_query($con, $query);
 
 ?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,19 +96,18 @@ $activities = mysqli_query($con, $query);
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img" src="img/DL.png" style="width: 220px; height: 110px;"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="clientindex.php">Home</a></li>
-         <li><a href="aboutus.php">About us</a></li>
+        <li class="active"><a href="clientindex.php">Home</a></li>
           <li><a href="rooms.php">Rooms</a></li>
            <li><a href="gallery.php">Gallery</a></li>
-            <li><a href="contactus.php">Contact us</a></li>
+           <li><a href="booking.php">Book a Room</a></li>
+           <li><a href="send.php">Send Slip</a></li>
+            <li><a href="rateus.php">Rate Us</a></li>
               <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Guest<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><?php echo  $login_session = $row['user_fullname'];?><i class="material-icons right">arrow_drop_down</i></a></li>
        <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
-  <li><a href="booking.php">Book a room</a></li>
+  <li><a href="clientsettings.php">Profile Settings</a></li>
   <li class="divider"></li>
-  <li><a href="send.php">Send deposit slip</a></li>
-   <li class="divider"></li>
    <li><a href="logout.php">Logout</a></li>
       </ul>
 
@@ -175,6 +203,7 @@ $activities = mysqli_query($con, $query);
             <div class="card grey darken-2">
               <div class="card-content white-text" align="center">
                 <span class="card-title amber-text text-accent-3">Promos</span>
+                
   <?php while($row = mysqli_fetch_array($promos)):?>
 
    <p style="font-size:15px; color:white; " ><?php echo ($row['promos']);?></p>  <p  style="font-size:10px; color:white;"><?php echo ($row['date']);?></p> 
