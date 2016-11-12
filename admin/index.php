@@ -29,7 +29,7 @@
       <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Admin<i class="material-icons right">arrow_drop_down</i></a></li>
        <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
-  <li><a href="acceptedusers.php">Profile Settings</a></li>
+  <li><a href="adminsettings.php">Profile Settings</a></li>
       <li class="divider"></li>
     <li><a href="logout.php">Logout</a></li>
    
