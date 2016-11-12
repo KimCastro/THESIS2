@@ -203,16 +203,17 @@ background-color: rgb(183, 28, 28);
         <div class="cell colspan7 padding10">
           <div> <ul class="breadcrumbs">
             <h3 class="text-light"><span class = "mif-user" >  </span></h3></div>
-            <hr class="thin bg-gray"> 
             <div class="tile-container align-left">
-<br>
+
+<div style="padding: 35px">
 <ul class="collapsible popout" data-collapsible="accordion">
 <ul class="collapsible" data-collapsible="accordion">
     <li>
       <div class="collapsible-header"><i class="material-icons">perm_identity</i>Username</div>
       <div class="collapsible-body">
         <form rel="async" action="clientsettings.php" method="post">
-        <div class="row">
+        <div style="padding: 19px;">
+        <div class="row" >
           <div class="input-field col s6">
             <input value = "<?php echo  $login_session = $row['user_name'];?> " readonly>
             <label class="active" for="first_name2">Your Current Username</label>
@@ -225,8 +226,16 @@ background-color: rgb(183, 28, 28);
             <label class="active" for="first_name2">New Username</label>
           </div>
         </div>
-
-        <input class="green waves-effect waves-light btn" style="width:140px; " style="color:white" type="submit" name="username" value="Save Data">
+        
+        <div class="frame">
+              <div class="content">                                                   
+                <form rel="async" action="clientsettings.php" method="post">         
+                  <input class="green waves-effect waves-light btn" style="width:140px; " style="color:white" type="submit" name="password" value="Save Data">
+                  <br><input type="hidden" name="user_id"  value = " " readonly>
+                </form>
+            </div>
+          </div>
+          </div>
         </form><br>
     </li>
 
@@ -234,6 +243,7 @@ background-color: rgb(183, 28, 28);
       <div class="collapsible-header"><i class="material-icons">lock_open</i>Password</div>
       <div class="collapsible-body">
       <form rel="async" action="clientsettings.php" method="post">
+        <div style="padding: 19px;">
         <div class="row">
           <div class="input-field col s6">
             <input value = "<?php echo  $login_session = $row['user_password'];?> " readonly>
@@ -262,6 +272,7 @@ background-color: rgb(183, 28, 28);
                 </form>
             </div>
           </div>
+          </div>
           </form>
 
       </div>
@@ -271,6 +282,7 @@ background-color: rgb(183, 28, 28);
       <div class="collapsible-body">
 
       <form rel="async" action="clientsettings.php" method="post">
+      <div style="padding: 19px;">
       <div class="row">
           <div class="input-field col s6">
             <input value = "  <?php echo  $login_session = $row['user_email'];?>" readonly>
@@ -284,20 +296,27 @@ background-color: rgb(183, 28, 28);
             <label class="active" for="first_name2">New Email</label>
           </div>
       </div>
-      <input class="green waves-effect waves-light btn" style="width:140px; " style="color:white" type="submit" name="email" value="Save Data"><br><br><br>
+      <div class="frame">
+              <div class="content">                                                   
+                <form rel="async" action="clientsettings.php" method="post">         
+                  <input class="green waves-effect waves-light btn" style="width:140px; " style="color:white" type="submit" name="password" value="Save Data">
+                  <br><input type="hidden" name="user_id"  value = " " readonly><br><br>
+                </form>
+            </div>
+          </div>
+          </div>
       </form> 
-      
-                </div>
       </div>
     </li>
   </ul>
   </ul>
+                    <a href="clientindex.php" class="red waves-effect waves-light btn" style="width:140px; padding-left: 35px; "  role="button" >BACK</a>
+  </div>
 
 
                 
               
-                <br>
-                    <a href="clientindex.php" class="red waves-effect waves-light btn" style="width:140px; "  role="button" style="width:150px;" >BACK</a>
+                
                 
               </form>
             
